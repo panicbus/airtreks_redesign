@@ -8,6 +8,36 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require bootstrap.min
  *= require_self
  *= require_tree .
  */
+
+html, body {
+	margin: 0;
+}
+
+.main-wrapper {
+	background-color: #8FC2E9;
+	height: 100vh;
+	text-align: center;
+	padding: 1px;
+}
+
+.content-box {
+	border: 10px solid #E5E5E5;
+	background-color: #fff;
+	height: 80vh;
+	width: 75%;
+	display: block;
+	margin: 19px auto;
+}
+
+.logo-box {
+	background: url(../assets/at_logo.png) no-repeat;
+	height: 100%;
+	width: 100%;
+	margin: 10px;
+}
+
+
