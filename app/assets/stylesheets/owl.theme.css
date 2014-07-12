@@ -77,3 +77,20 @@
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
+
+/*left and right controls placement*/
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 30px;
+  top: 250px; 
+  opacity: 0.8;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 30px;
+  top: 250px;
+  opacity: 0.8;
+}

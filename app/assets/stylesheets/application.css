@@ -21,7 +21,6 @@ nav.navbar.navbar-default.navbar-static-top {
 	margin-bottom: 0px;
 }
 
-
 .main-wrapper {
 	background-color: #8FC2E9;
 	height: 120vh;
@@ -62,10 +61,20 @@ nav.navbar.navbar-default.navbar-static-top {
 
 .btn-lg {
 	border-radius: 0px !important;
-	background-color: #e67e22 !important;
-	border: 0 !important;
+	/*background-color: #e67e22 !important;*/
+	/*border: 0 !important;*/
 	font-size: 30px !important;
 }
+
+.glyphicon-chevron-left {
+	font-size: 25px;
+	padding: 6px 6px 6px 0;
+}
+.glyphicon-chevron-right {
+	font-size: 25px;
+	padding: 6px 0 6px 6px;
+}
+
 
 .content-box {
 	border: 10px solid #E5E5E5;
@@ -88,6 +97,23 @@ img.nav-logo {
 	margin: 10px;
 }
 
+.footer {
+	margin: 0;
+	background-color: #2E2E2E;
+	height: 300px;
+	width: 100%;
+	color: #fff;
+}
 
+.footer-row-container {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.footer li {
+	padding: 8px;
+}
 
 
