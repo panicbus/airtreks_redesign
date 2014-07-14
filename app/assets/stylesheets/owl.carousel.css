@@ -39,6 +39,8 @@
 	
 .owl-carousel .owl-item{
 	float: left;
+	height: 580px;
+	width: 100%;
 }
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
@@ -55,7 +57,7 @@
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url(grabbing.png) 8 8, move;
+    cursor:url(assets/grabbing.png) 8 8, move;
 }
 
 /* fix */
