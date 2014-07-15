@@ -20,6 +20,11 @@ html, body, li {
 
 body a:hover {
 	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;  
 }
 
 nav.navbar.navbar-default.navbar-static-top {
@@ -31,7 +36,6 @@ nav.navbar.navbar-default.navbar-static-top {
 	height: 310vh;
 	text-align: center;
 }
-
 
 /* ////// CAROUSEL /////// */
 
@@ -99,23 +103,25 @@ nav.navbar.navbar-default.navbar-static-top {
 	margin: 19px auto;
 }
 
-/*img.nav-logo {
-	width: 140px;
-	margin: -8px 0 0 -8px;
-}*/
-
-/*.logo-box {
-	background: url(../assets/at_logo.png) no-repeat;
-	height: 100%;
+.rtw101 {
 	width: 100%;
-	margin: 10px;
-}*/
-
-.rtw101-nav li {
-	cursor: pointer;
+	height: 100%;
 }
 
-.ready-div, .set-div, .go-div {
+.rtw101-content, .rtw101-nav {
+	/*box-sizing: border-box;*/
+	height: 100%;
+	float: left;
+	padding: 30px;
+}
+
+.rtw101-content {
+	width: 70%;
+	border-right: 2px solid #E5E5E5;
+	background-color: lightgreen;
+}
+
+.ready-div, .set-div, .go-div {  
 	display: none;
 	height: 100%;
 	width: 100%;
@@ -127,7 +133,6 @@ nav.navbar.navbar-default.navbar-static-top {
 .ready-div {
 	background-color: darkred;
 }
-
 .set-div {
 	background-color: darkblue;
 } 
@@ -139,35 +144,46 @@ nav.navbar.navbar-default.navbar-static-top {
 	display: block;
 }
 
-.ready.current, .set.current, .go.current {
-	color: orange;
-	font-size: 20px;
-}
-
-
-
-.rtw101 {
-	width: 100%;
-	height: 100%;
-}
-
-.rtw101-content, .rtw101-nav {
-	box-sizing: border-box;
-	height: 100%;
-	float: left;
-	padding: 30px;
-}
-
-.rtw101-content {
-	width: 70%;
-	background-color: lightgreen;
-}
-
 .rtw101-nav {
 	width: 30%;
+	padding-top: 10px;
 	background-color: lightyellow;
-	border-left: 2px solid #E5E5E5;
+	border: 0;
+	overflow: scroll;
 }
+
+.nav-headers {
+	cursor: pointer;
+}
+
+.rtw101-nav li {
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+.rtw101-nav li:hover {
+	border-left: 3px solid orange;
+	color: orange;
+} 
+
+.ready.current, .set.current, .go.current {
+	color: orange;
+}
+
+.ready-hiddenitems, .set-hiddenitems, .go-hiddenitems {
+	display: none;
+}
+
+.ready-hiddenitems.current, .set-hiddenitems.current, .go-hiddenitems.current {
+	display: block;
+}
+
+.hiddenitems {
+	width: 100%;
+	overflow: hidden;
+}
+
+
 
    /* ///// SPECIALS //// */
 .specials_thumbs_container {
