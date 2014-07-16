@@ -4,9 +4,9 @@
   <title>Airtreks Redesign</title>
   	
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
- 
+ 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Diplomata+SC|Stalinist+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/owl.carousel.css">
   <link rel="stylesheet" href="assets/owl.theme.css">	
 	
@@ -150,20 +150,23 @@
 	  </div>
 	</div>
 
-	<!-- //////// CONTENT BOX ///////// -->
+	<!-- //////// RTW 101 - CONTENT ///////// -->
 
 	<div class="content-box">
 		<!-- <div class="logo-box">
 		</div> -->
 		<div class="rtw101">
 			<div class="rtw101-content">
+				<div class="content-default">RTW 101</div>
 				<div class="ready-div view-options">Ready</div>
 				<div class="set-div view-options">Set</div>
 				<div class="go-div view-options">Go</div>
 			</div>
+
+			<!-- // CONTENT NAV // -->
 			<div class="rtw101-nav">
 					<h2>How to Travel the World on a RTW Ticket</h2>
-					<h3 class="ready nav-headers view-options text-left">Ready</h3>
+					<h3 class="ready view-options text-left">Ready</h3>
 					<div class="ready-hiddenitems hiddenitems">
 						<ul>
 							<li class="text-left">
@@ -234,7 +237,7 @@
 							</li>
 						</ul>
 					</div>
-					<h3 class="set nav-headers view-options text-left">Set</h3>
+					<h3 class="set view-options text-left">Set</h3>
 					<div class="set-hiddenitems hiddenitems">
 						<ul>
 							<li class="text-left">
@@ -245,7 +248,7 @@
 							</li>
 						</ul>
 					</div>
-					<h3 class="go nav-headers view-options text-left">Go</h3>
+					<h3 class="go view-options text-left">Go</h3>
 					<div class="go-hiddenitems hiddenitems">
 						<ul>
 							<li class="text-left">
@@ -301,6 +304,8 @@
 		      <div class="caption">
 		        <h3>Amazing Adventure Special</h3>
 		        <p>Los Angeles - London - Nairobi - Kilimanjaro - Zanzibar - Dar Es Salaam - Johannesburg - surface - Cape Town - Dubai - Singapore - surface - Kuala Lumpur - Chiang Mai - surface - Bangkok - Phuket - Singapore - Brisbane - surface - Sydney - Nadi (Fiji) - Los Angeles</p>
+		        <p><span class="sp-thumb-price">From USD 4799 to 5469</span><br>
+						   <span class="sp-thumb-subprice">Including taxes of USD 1244</span></p>
 		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
 		      </div>
 		    </div>
@@ -312,35 +317,41 @@
 		      <div class="caption">
 		        <h3>The Nomad</h3>
 		        <p>Los Angeles - Tokyo - Singapore - Kathmandu - surface - Delhi - Istanbul - London - surface - Paris - Los Angeles</p>
+		        <p><span class="sp-thumb-price">From USD 2599 to 3159</span><br>
+					     <span class="sp-thumb-subprice">Including taxes of USD 985</span></p>
 		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
 		      </div>
 		    </div>
 		  </div>
-		
+
 		  <div class="col-sm-6 col-md-4">
 		    <div class="thumbnail grow">
 		      <img src="assets/spc_cpac.png" alt="...">
 		      <div class="caption">
 		        <h3>Circle Pacific</h3>
 		        <p>Los Angeles - Honolulu - Manila - Bangkok - surface - Singapore - Sydney - surface - Melbourne - Christchurch - surface - Auckland - Rarotonga (Cook Islands) - Los Angeles</p>
+		        <p><span class="sp-thumb-price">From USD 2748 to 3467</span><br>
+						   <span class="sp-thumb-subprice">Including taxes of USD 950</span></p>
 		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
 		      </div>
 		    </div>
 		  </div>
 		</div>
-		<div class="all-specials-msg">
-			<p class="grow"><a href="#">See all the specials!</a></p>
+		<div class="all-specials-msg ease">
+			<p><a href="#">See all the specials!</a></p>
 		</div>
-	</div>
+	
+	</div> <!-- specials thumbs container -->
 
 
 	<!-- ///////// FOOTER ////////// -->
 
-	<div class="footer">
+	<div class="footer ease">
 		<div class="footer-row-container">
 			<div class="row">
 			  <div class="col-md-4">
 			  	<ul class="list-unstyled list-group">
+			  		<li class="text-left"><h5>The deets:</h5>
 			  		<li class="text-left"><a href="#">Contact AirTreks</a></li>
 			  		<li class="text-left"><a href="#">About AirTreks</a></li>
 			  		<li class="text-left"><a href="#">Your Privacy</a></li>
@@ -352,6 +363,7 @@
 			  </div>
 			  <div class="col-md-4">
 					<ul class="list-unstyled list-group">
+			  		<li class="text-left"><h5>RTW 101</h5></li>
 			  		<li class="text-left"><a href="#">Ready</a></li>
 			  		<li class="text-left"><a href="#">Set</a></li>
 			  		<li class="text-left"><a href="#">Go</a></li>
@@ -362,6 +374,7 @@
 			  </div>
 			  <div class="col-md-4">
 			  	<ul class="list-unstyled list-group">
+			  		<li class="text-left"><h5>Socialize with us!</h5></li>
 			  		<li class="text-left"><a href="#">Facebook</a></li>
 			  		<li class="text-left"><a href="#">Twitter</a></li>
 			  	</ul>
