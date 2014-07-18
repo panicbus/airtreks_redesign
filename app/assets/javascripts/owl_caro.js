@@ -1,11 +1,10 @@
 $(document).ready(function() {
    
-  $("#owl-demo").owlCarousel({
-  
+  $("#owl-demo").owlCarousel({ 
       navigation : true, // Show next and prev buttons
       navigationText: [
-        "<i class='glyphicon glyphicon-chevron-left'></i>",
-        "<i class='glyphicon glyphicon-chevron-right'></i>"
+        "<i class='glyphicon glyphicon-chevron-left left-arrow'></i>",
+        "<i class='glyphicon glyphicon-chevron-right right-arrow'></i>"
       ],
       slideSpeed : 300,
       paginationSpeed : 500,
@@ -13,7 +12,34 @@ $(document).ready(function() {
       autoPlay: true,
       rewindSpeed: 500,
       stopOnHover: true
- 
   });
+
+
+  // SPECIALS CAROUSEL //
+  var owl = $("#owl-2");
+ 
+  owl.owlCarousel({
+      itemsCustom : [
+        [0, 1],
+        [450, 2],
+        [600, 2],
+        [700, 3],
+        [1000, 3],
+        [1200, 3],
+        [1400, 3],
+        [1600, 3]
+      ],
+      slideSpeed : 300,
+      paginationSpeed : 500,
+      autoPlay: true,
+      rewindSpeed: 500,
+      stopOnHover: true,      
+      navigation : true,
+      navigationText: [
+        "<i class='glyphicon glyphicon-chevron-left'></i>",
+        "<i class='glyphicon glyphicon-chevron-right'></i>"
+      ]
+  });
+
  
 });
