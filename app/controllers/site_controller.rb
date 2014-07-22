@@ -9,7 +9,7 @@ class SiteController < ApplicationController
 	end
 
 	def show
-		render :show
+		render :articles
 	end
 
 	def edit
@@ -18,6 +18,14 @@ class SiteController < ApplicationController
 
 	def update
 		
+	end
+
+	def one
+		render :one
+	end
+
+	def wheretogo
+		render :where_to_go
 	end
 
 end

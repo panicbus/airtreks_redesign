@@ -40,7 +40,7 @@ $(document).ready(function(){
 			
 			if (pageScroll > rtwBanner) {
 				$('.rtw101-splash').animate({
-					top: "50px",
+					bottom: "100px",
 				}, 'slow');
 			}
 

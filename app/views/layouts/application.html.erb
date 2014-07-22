@@ -6,7 +6,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
  	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Ewert|Diplomata+SC|Stalinist+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ewert|Open+Sans|Nobile|Signika|Titillium+Web|Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/owl.carousel.css">
   <link rel="stylesheet" href="assets/owl.theme.css">	
 	
@@ -116,441 +116,8 @@
 	</nav>
 
 
-	<!-- ///////// CAROUSEL ////////// -->
+	<%= yield %>
 
-	<div id="owl-demo" class="owl-carousel owl-theme cursor">
-	  <div class="item">
-	  	<div class="image-wrapper">
-	  		<div class="image-content">
-  				<p>Last week, 10,612 people used TripPlanner to price their Around the World Tickets or Multi Destination Flights.</p>
-			  	<p>Now it’s your turn to get instant pricing for any Round the World trip.</p>
-			  	<button type="button" class="btn btn-primary btn-lg begin-button foob">Begin Your Journey Here</button><br>
-			  	<p><a href="#">Free travel insurance included on every qualified trip!</a></p>
-		  	</div>
-	  	</div>
-	  	<img src="assets/sp_lake1.jpg" alt="dribbble com/griffinkeller">
-	  </div>
-	  <div class="item">
-	  	<div class="image-wrapper">
-	  		<div class="image-content">
-	  			<p>Find out why AirTreks is the best Around the World ticket provider anywhere.</p><br>
-	  			<button type="button" class="btn btn-primary btn-lg">Testimonials</button>
-	  		</div>
-	  	</div>
-	  	<img src="assets/sp_prague1.jpg" alt="dribbble com/LumenBigott">	  	
-	  </div>
-	  <div class="item">
-	  	<div class="image-wrapper">
-	  		<div class="image-content">
-		  		<p style="color:#888">Learn how to travel around the world.</p><br>
-			  	<button type="button" class="btn btn-primary btn-lg" id="tortw">Check out RTW 101</button>
-		  	</div>
-		  </div>
-	  	<img src="assets/sp_canal1.jpg" alt="flickr com/photos/kokorowa/2313467800">
-	  </div>
-	</div>
-
-	<!-- //////// RTW 101 - CONTENT ///////// -->
-
-	<div class="content-box">
-		
-
-		<div id="toRTW101"></div>
-		<div class="rtw101">
-
-			<div class="rtw101-content">
-				<div class="content-default">
-					<a name="rtwBannerAnchor" id="rtwBannerAnchor"></a>
-					<div class="rtw101-splash">RTW 101</div>
-				</div>
-
-				<div class="ready-div view-options">Ready</div>
-				<div class="set-div view-options">Set</div>
-				<div class="go-div view-options">Go</div>
-			</div>
-
-			<!-- // CONTENT NAV // -->
-			<div class="rtw101-nav">
-				
-					<h2 class="nav-title">How to Travel the World on a RTW Ticket</h2>
-					<!-- <h3 class="ready view-options text-left">Ready</h3>
-					<div class="ready-hiddenitems hiddenitems">
-						<ul>
-							<li class="text-left">
-								ready 1
-							</li>
-							<li class="text-left">
-								ready 2
-							</li>
-							<li class="text-left">
-								ready 3
-							</li>
-							<li class="text-left">
-								ready 4
-							</li>	
-							<li class="text-left">
-								ready 5
-							</li>
-							<li class="text-left">
-								ready 6
-							</li>
-							<li class="text-left">
-								ready 7
-							</li>
-							<li class="text-left">
-								ready 8
-							</li>	
-							<li class="text-left">
-								ready 9
-							</li>
-							<li class="text-left">
-								ready 10
-							</li>
-							<li class="text-left">
-								ready 11
-							</li>
-							<li class="text-left">
-								ready 12
-							</li>	
-							<li class="text-left">
-								ready 13
-							</li>
-							<li class="text-left">
-								ready 14
-							</li>
-							<li class="text-left">
-								ready 15
-							</li>
-							<li class="text-left">
-								ready 16
-							</li>	
-							<li class="text-left">
-								ready 17
-							</li>
-							<li class="text-left">
-								ready 18
-							</li>
-							<li class="text-left">
-								ready 19
-							</li>
-							<li class="text-left">
-								ready 20
-							</li>	
-							<li class="text-left">
-								ready 21
-							</li>
-							<li class="text-left">
-								ready 22
-							</li>
-						</ul>
-					</div>
-					<h3 class="set view-options text-left">Set</h3>
-					<div class="set-hiddenitems hiddenitems">
-						<ul>
-							<li class="text-left">
-								set 1
-							</li>
-							<li class="text-left">
-								set 2
-							</li>
-						</ul>
-					</div>
-					<h3 class="go view-options text-left">Go</h3>
-					<div class="go-hiddenitems hiddenitems">
-						<ul>
-							<li class="text-left">
-								go 1
-							</li>
-							<li class="text-left">
-								go 2
-							</li>
-							<li class="text-left">
-								go 3
-							</li>
-							<li class="text-left">
-								go 4
-							</li>
-							<li class="text-left">
-								go 5
-							</li>
-							<li class="text-left">
-								go 6
-							</li>
-							<li class="text-left">
-								go 7
-							</li>
-							<li class="text-left">
-								go 8
-							</li>
-							<li class="text-left">
-								go 9
-							</li>
-							<li class="text-left">
-								go 10
-							</li>
-							<li class="text-left">
-								go 11
-							</li>
-							<li class="text-left">
-								go 12
-							</li>
-						</ul>	
-					</div> -->
-				
-					<div class="panel-group" id="accordion">
-					  
-					  <div class="panel panel-default ready-nav">
-					      <div class="panel-heading">
-						      <h4 class="panel-title">
-									  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-					          Ready
-						 			  </a>
-					      	</h4>
-					    	</div>
-					    
-					    <div id="collapseOne" class="panel-collapse collapse in"> 
-					      <div class="panel-body">
-					 	        <div>
-											<li class="text-left">
-												ready 1
-											</li>
-											<li class="text-left">
-												ready 2
-											</li>
-											<li class="text-left">
-												ready 3
-											</li>
-											<li class="text-left">
-												ready 4
-											</li>	
-											<li class="text-left">
-												ready 5
-											</li>
-											<li class="text-left">
-												ready 6
-											</li>
-											<li class="text-left">
-												ready 7
-											</li>
-											<li class="text-left">
-												ready 8
-											</li>	
-											<li class="text-left">
-												ready 9
-											</li>
-											<li class="text-left">
-												ready 10
-											</li>
-											<li class="text-left">
-												ready 11
-											</li>
-											<li class="text-left">
-												ready 12
-											</li>	
-											<li class="text-left">
-												ready 13
-											</li>
-											<li class="text-left">
-												ready 14
-											</li>
-											<li class="text-left">
-												ready 15
-											</li>
-											<li class="text-left">
-												ready 16
-											</li>	
-											<li class="text-left">
-												ready 17
-											</li>
-											<li class="text-left">
-												ready 18
-											</li>
-											<li class="text-left">
-												ready 19
-											</li>
-											<li class="text-left">
-												ready 20
-											</li>	
-											<li class="text-left">
-												ready 21
-											</li>
-											<li class="text-left">
-												ready 22
-											</li>
-										</div>
-					     </div>
-					    </div>
-					  </div>
-
-					  <div class="panel panel-default set-nav">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					          Set
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse">
-					      <div class="panel-body">
-					    			<div>
-						    			<li class="text-left">
-												set 1
-											</li>
-											<li class="text-left">
-												set 2
-											</li>
-										</div>
-							  </div>
-					    </div>
-					  </div>
-
-					  <div class="panel panel-default go-nav">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-					          Go
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseThree" class="panel-collapse collapse">
-					      <div class="panel-body">
-					      		<div>
-											<li class="text-left">
-												go 1
-											</li>
-											<li class="text-left">
-												go 2
-											</li>
-											<li class="text-left">
-												go 3
-											</li>
-											<li class="text-left">
-												go 4
-											</li>
-											<li class="text-left">
-												go 5
-											</li>
-											<li class="text-left">
-												go 6
-											</li>
-											<li class="text-left">
-												go 7
-											</li>
-											<li class="text-left">
-												go 8
-											</li>
-											<li class="text-left">
-												go 9
-											</li>
-											<li class="text-left">
-												go 10
-											</li>
-											<li class="text-left">
-												go 11
-											</li>
-											<li class="text-left">
-												go 12
-											</li>
-										</div>	
-								</div>
-					    </div>
-					  </div>
-					</div>
-
-
-			</div> <!-- end of content nav div -->
-
-		</div> <!-- end of rtw 101 content div -->
-	</div> <!-- end of content box --> 
-
-	<!-- //////// SPECIALS //////// -->
-	<div class="specials_thumbs_container">
-
-		<div id="owl-2" class="owl-carousel owl-theme cursor">
-		  
-		  <div class="sp-item">
-		  	<div class="thumbnail grow">
-		      <img src="assets/spc_amazing_adventure.png" alt="...">
-		      <div class="caption">
-		        <h3>Amazing Adventure Special</h3>
-		        <p>Los Angeles - London - Nairobi - Kilimanjaro - Zanzibar - Dar Es Salaam - Johannesburg - surface - Cape Town - Dubai - Singapore - surface - Kuala Lumpur - Chiang Mai - surface - Bangkok - Phuket - Singapore - Brisbane - surface - Sydney - Nadi (Fiji) - Los Angeles</p>
-		        <p><span class="sp-thumb-price">From USD 4799 to 5469</span><br>
-						   <span class="sp-thumb-subprice">Including taxes of USD 1244</span></p>
-		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
-		      </div>
-		  	</div>
-		  </div>
-
-		  <div class="sp-item">
-		  	<div class="thumbnail grow">
-		      <img src="assets/spc_the_nomad.png" alt="...">
-		      <div class="caption">
-		        <h3>The Nomad</h3>
-		        <p>Los Angeles - Tokyo - Singapore - Kathmandu - surface - Delhi - Istanbul - London - surface - Paris - Los Angeles</p>
-		        <p><span class="sp-thumb-price">From USD 2599 to 3159</span><br>
-					     <span class="sp-thumb-subprice">Including taxes of USD 985</span></p>
-		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="sp-item">
-		  	<div class="thumbnail grow">
-		      <img src="assets/spc_cpac.png" alt="...">
-		      <div class="caption">
-		        <h3>Circle Pacific</h3>
-		        <p>Los Angeles - Honolulu - Manila - Bangkok - surface - Singapore - Sydney - surface - Melbourne - Christchurch - surface - Auckland - Rarotonga (Cook Islands) - Los Angeles</p>
-		        <p><span class="sp-thumb-price">From USD 2748 to 3467</span><br>
-						   <span class="sp-thumb-subprice">Including taxes of USD 950</span></p>
-		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="sp-item">
-		  	<div class="thumbnail grow">
-		      <img src="assets/spc_amazing_adventure.png" alt="...">
-		      <div class="caption">
-		        <h3>Amazing Adventure Special</h3>
-		        <p>Los Angeles - London - Nairobi - Kilimanjaro - Zanzibar - Dar Es Salaam - Johannesburg - surface - Cape Town - Dubai - Singapore - surface - Kuala Lumpur - Chiang Mai - surface - Bangkok - Phuket - Singapore - Brisbane - surface - Sydney - Nadi (Fiji) - Los Angeles</p>
-		        <p><span class="sp-thumb-price">From USD 4799 to 5469</span><br>
-						   <span class="sp-thumb-subprice">Including taxes of USD 1244</span></p>
-		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
-		      </div>
-		  	</div>
-		  </div>
-
-		  <div class="sp-item">
-		  	<div class="thumbnail grow">
-		      <img src="assets/spc_the_nomad.png" alt="...">
-		      <div class="caption">
-		        <h3>The Nomad</h3>
-		        <p>Los Angeles - Tokyo - Singapore - Kathmandu - surface - Delhi - Istanbul - London - surface - Paris - Los Angeles</p>
-		        <p><span class="sp-thumb-price">From USD 2599 to 3159</span><br>
-					     <span class="sp-thumb-subprice">Including taxes of USD 985</span></p>
-		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="sp-item">
-		  	<div class="thumbnail grow">
-		      <img src="assets/spc_cpac.png" alt="...">
-		      <div class="caption">
-		        <h3>Circle Pacific</h3>
-		        <p>Los Angeles - Honolulu - Manila - Bangkok - surface - Singapore - Sydney - surface - Melbourne - Christchurch - surface - Auckland - Rarotonga (Cook Islands) - Los Angeles</p>
-		        <p><span class="sp-thumb-price">From USD 2748 to 3467</span><br>
-						   <span class="sp-thumb-subprice">Including taxes of USD 950</span></p>
-		        <p><a href="#" class="btn btn-primary" role="button">Get more info</a></p>
-		      </div>
-		    </div>
-		  </div>
-
-		</div>
-
-		<div class="all-specials-msg ease"><p><a href="#">See all the specials!</a></p></div>
-
-	</div> <!-- specials thumbs container -->
 
 
 	<!-- ///////// FOOTER ////////// -->
@@ -561,31 +128,31 @@
 			  <div class="col-md-4">
 			  	<ul class="list-unstyled list-group">
 			  		<li class="text-left"><h5>THE DEETS</h5>
-			  		<li class="text-left"><a href="#">Contact AirTreks</a></li>
-			  		<li class="text-left"><a href="#">About AirTreks</a></li>
-			  		<li class="text-left"><a href="#">Your Privacy</a></li>
-			  		<li class="text-left"><a href="#">Partner with AirTreks</a></li>
-			  		<li class="text-left"><a href="#">FAQs</a></li>
-			  		<li class="text-left"><a href="#">Customer Service</a></li>
-			  		<li class="text-left"><a href="#">Sitemap</a></li>
+			  		<li class="text-left footer-item"><a href="#">Contact AirTreks</a></li>
+			  		<li class="text-left footer-item"><a href="#">About AirTreks</a></li>
+			  		<li class="text-left footer-item"><a href="#">Your Privacy</a></li>
+			  		<li class="text-left footer-item"><a href="#">Partner with AirTreks</a></li>
+			  		<li class="text-left footer-item"><a href="#">FAQs</a></li>
+			  		<li class="text-left footer-item"><a href="#">Customer Service</a></li>
+			  		<li class="text-left footer-item"><a href="#">Sitemap</a></li>
 			  	</ul>
 			  </div>
 			  <div class="col-md-4">
 					<ul class="list-unstyled list-group">
 			  		<li class="text-left"><h5>RTW 101</h5></li>
-			  		<li class="text-left"><a href="#">Ready</a></li>
-			  		<li class="text-left"><a href="#">Set</a></li>
-			  		<li class="text-left"><a href="#">Go</a></li>
-			  		<li class="text-left"><a href="#">Travel Store</a></li>
-			  		<li class="text-left"><a href="#">Blog</a></li>
-			  		<li class="text-left"><a href="#">Testimonials</a></li>
+			  		<li class="text-left footer-item"><a href="#">Ready</a></li>
+			  		<li class="text-left footer-item"><a href="#">Set</a></li>
+			  		<li class="text-left footer-item"><a href="#">Go</a></li>
+			  		<li class="text-left footer-item"><a href="#">Travel Store</a></li>
+			  		<li class="text-left footer-item"><a href="#">Blog</a></li>
+			  		<li class="text-left footer-item"><a href="#">Testimonials</a></li>
 			  	</ul>
 			  </div>
 			  <div class="col-md-4">
 			  	<ul class="list-unstyled list-group">
 			  		<li class="text-left"><h5>SOCIALIZE WITH US</h5></li>
-			  		<li class="text-left"><a href="#">Facebook</a></li>
-			  		<li class="text-left"><a href="#">Twitter</a></li>
+			  		<li class="text-left footer-item"><a href="#">Facebook</a></li>
+			  		<li class="text-left footer-item"><a href="#">Twitter</a></li>
 			  	</ul>
 			  	<p class="text-left"><img class="footer-logo" src="assets/at_logo.png"></p>
 			  </div>
@@ -595,6 +162,5 @@
 
 </div>
 
-<%= yield %>
 </body>
 </html>
