@@ -7,6 +7,7 @@
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
  	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Ewert|Open+Sans|Nobile|Signika|Titillium+Web|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="assets/owl.carousel.css">
   <link rel="stylesheet" href="assets/owl.theme.css">	
 	
@@ -14,6 +15,7 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
+  <script src="assets/masonry.pkgd.min.js"></script>
 	<script src="assets/owl.carousel.js"></script>
  	<script src="assets/owl.caro.js"></script>
 
@@ -21,6 +23,7 @@
 </head>
 <body>
 <div class="main-wrapper">
+<div class="background-wrapper">	
 
 	<!-- //// NAV BAR ///// -->
 	<nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -115,8 +118,8 @@
 	  </div> 
 	</nav>
 
-
 	<%= yield %>
+</div> <!-- background-wrapper -->
 
 
 

@@ -34,10 +34,13 @@ nav.navbar.navbar-default.navbar-static-top {
 }
 
 .main-wrapper {
-	background-color: #8FC2E9;
-	height: 337vh;
 	text-align: center;
 	font-family: 'Titillium Web', sans-serif;
+}
+
+.background-wrapper {
+	background-color: #8FC2E9;
+	height: 337vh;
 }
 
 img.nav-logo {
@@ -389,5 +392,86 @@ img.nav-logo {
 	/*margin: 260px 0px 0px -75px;*/
 	position: absolute;
 }
+
+
+
+/* //////////////// ARTICLES INDEX //////////////// */
+
+.articles-container {
+	width: 100%;
+	height: 375vh;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.img-box img {
+	width: 100%;
+}
+
+.img-box {
+	width: 100%;
+	margin: 5px auto;
+	display: block;
+	border-radius: 3px;
+}
+
+/*masonry testing*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.masonry {
+  margin: 0 auto;
+}
+
+.masonry .item {
+  width: 300px;
+  height: auto;
+  float: left;
+  padding: 10px;
+  background-color: #8FC2E9;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.item:hover {
+  border-color: #111;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+/*////////////////*/
+.item {
+  -webkit-transition: width 0.4s, height 0.4s;
+     -moz-transition: width 0.4s, height 0.4s;
+       -o-transition: width 0.4s, height 0.4s;
+          transition: width 0.4s, height 0.4s;
+}
+
+
+/* both item and item content change size */
+.item.is-expanded,
+.item.is-expanded .item-content {
+  width: 400px;
+  height: auto;
+}
+
+.item.is-expanded {
+  z-index: 2;
+}
+
+.item.is-expanded {
+  background: #F90;
+}
+
+
+
+
+
+
+
+
 
 

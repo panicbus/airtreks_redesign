@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 
 
-	// scrolling //
+	// scrolling banner //
 	$('#tortw').click(function(){
       $('html, body').animate({
         scrollTop: $("#toRTW101").offset().top - 10
@@ -74,6 +74,24 @@ $(document).ready(function(){
 
 	// for fade-in of first carousel text on page load
 	$('.image-content').delay(500).fadeIn(400);
+
+
+
+
+	/// MASONRY ///
+
+ 	$(function(){ 
+		var $container = document.querySelector('.masonry');
+
+	  $('.item').click(function() {
+	    if ($('.item').hasClass('is-expanded')){
+	    	$('.item').removeClass('is-expanded');
+	    }
+	    $( this ).addClass('is-expanded');
+	    $container.masonry();
+	  });
+	});
+
 
 
 })
