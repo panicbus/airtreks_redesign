@@ -1,4 +1,20 @@
 $(document).ready(function(){
+	
+	//// PHONE/BIZ DIV SLIDE /////
+
+	$(document).scroll(function(){
+		var pageScroll = $(this).scrollTop();
+		var phonebiz = $('#phonebizanchor').offset().top - 200;
+		
+		if (pageScroll > phonebiz) {
+			$(".phone").animate({"left":"30px"}, "slow");
+			$(".biz").animate({"right":"30px"}, "slow");
+		};
+
+	});		
+
+
+////////////////
 
 	var navLink = function(link){
 		$(".view-options").removeClass("current");
@@ -34,6 +50,7 @@ $(document).ready(function(){
 	});
 	
 
+	// moving RTW 101 banner 
 	$(document).scroll(function(){
 			var pageScroll = $(this).scrollTop();
 			var rtwBanner = $('#rtwBannerAnchor').offset().top - 500;
@@ -64,7 +81,7 @@ $(document).ready(function(){
 
 
 
-	// scrolling banner //
+	// scrolling down to RTW content section //
 	$('#tortw').click(function(){
       $('html, body').animate({
         scrollTop: $("#toRTW101").offset().top - 10
@@ -75,7 +92,8 @@ $(document).ready(function(){
 	// for fade-in of first carousel text on page load
 	$('.image-content').delay(500).fadeIn(400);
 
-
+	// BOOSTRAP CAROUSEL
+	$('.carousel').carousel()
 
 
 	/// MASONRY ///
@@ -83,11 +101,11 @@ $(document).ready(function(){
  	$(function(){ 
 		var $container = document.querySelector('.masonry');
 
-	  $('.item').click(function() {
-	    if ($('.item').hasClass('is-expanded')){
-	    	$('.item').removeClass('is-expanded');
+	  $('.itemz').click(function() {
+	    if ($('.itemz').hasClass('is-expanded')){
+	    	$('.itemz').removeClass('is-expanded');
 	    }
-	    $( this ).addClass('is-expanded');
+	    $( this ).toggleClass('is-expanded');
 	    $container.masonry();
 	  });
 	});

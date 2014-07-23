@@ -31,14 +31,30 @@ $(document).ready(function() {
       ],
       slideSpeed : 300,
       paginationSpeed : 500,
-      autoPlay: true,
+      autoPlay: false,
       rewindSpeed: 500,
-      stopOnHover: true,      
+      // stopOnHover: true,      
       navigation : true,
       navigationText: [
         "<i class='glyphicon glyphicon-chevron-left'></i>",
         "<i class='glyphicon glyphicon-chevron-right'></i>"
       ]
+  });
+
+  $("#owl-3").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
   });
 
  
