@@ -34,4 +34,9 @@ AirtreksRedesign::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
+  # DON'T FORGET TO CHANGE THIS TO THE HOST DOMAIN USED IN PRODUCTION!!!! ^NC 
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
 end

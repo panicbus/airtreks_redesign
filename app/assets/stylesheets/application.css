@@ -44,6 +44,7 @@ p {
 
 nav.navbar.navbar-default.navbar-static-top {
 	margin-bottom: 0px;
+	background-color: #fff !important;
 }
 
 .main-wrapper {
@@ -57,8 +58,33 @@ nav.navbar.navbar-default.navbar-static-top {
 }
 
 img.nav-logo {
-	margin-top: -15px;
-	width: 190px;
+	margin-top: -11px;
+	width: 200px;
+}
+
+.nav li, .devise {
+	font-size: 25px;
+	padding: 3px;
+	color: #000;
+}
+
+.devise {
+	margin: 0px 0 20px -10px;
+	font-size: 18px;
+}
+.devise span {
+	color: #fff;
+}
+
+
+#flash {
+	position: absolute;
+	color: darkred;
+	background-color: rgba(255,255,255,0.7);
+	width: 30%;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
 }
 
 /* ////// CAROUSEL /////// */
@@ -176,6 +202,7 @@ img.nav-logo {
 	text-align: left;
 	width: 50%;
 	margin: 40px auto;
+	display: block;
 	background-color: #fff;
 	padding: 15px 30px 10px 30px !important;
 	-webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.5);
@@ -427,6 +454,7 @@ img.nav-logo {
 	/*//////// FOOTER ////////*/
 .footer {
 	margin: 0;
+	padding-top: 20px;
 	background-color: #2E2E2E;
 	background: url(../assets/noise.png);
 	height: auto;
@@ -450,9 +478,10 @@ img.nav-logo {
 	text-transform: uppercase;
 }
 
-.footer li:hover a {
+.footer li:hover a, .devise a:hover {
 	color: white !important;
 }
+
 
 .footer-logo {
 	/*margin: 260px 0px 0px -75px;*/
@@ -463,6 +492,10 @@ img.nav-logo {
 	text-align: left;
 	display: inline-block;
 	padding: 0px 20px 0px 20px;
+}
+
+.searchbar {
+	margin-left: -15px !important;
 }
 
 /* //////////////// ARTICLES INDEX //////////////// */
@@ -501,6 +534,15 @@ img.nav-logo {
 	background-color: #555555;
 	color: #fff;
 }
+
+.hiddenitems {
+	display: none;
+	padding: 10px;
+}
+
+
+
+
 
 .article-tiles {
 	width: 75%;
