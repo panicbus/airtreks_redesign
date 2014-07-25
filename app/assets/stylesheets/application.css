@@ -29,6 +29,19 @@ body a:hover, .ease:hover {
 }
 
 
+/*h2 {
+  font-size: 5.0vw !important;
+}
+h3 {
+	font-size: 4.0vw;
+}
+h4 {
+	font-size: 3.5vw;
+}
+p {
+  font-size: 2vmin;
+}*/
+
 nav.navbar.navbar-default.navbar-static-top {
 	margin-bottom: 0px;
 }
@@ -54,6 +67,7 @@ img.nav-logo {
     width: 100%;
     height: auto;
     margin-top:auto;
+    max-height: 569px !important;
 }
 
 .cursor {
@@ -72,13 +86,28 @@ img.nav-logo {
 	width: 75%;
 	color: #fff;
 	text-align: center;
-	margin: 60px auto;
+	margin: 50px auto;
 }
 
 .image-content p:nth-child(1) {
 	font-size: 40px;
 	color: #333;
 } 
+
+.first-slide p:nth-child(2) {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 38px !important;
+	letter-spacing: 2px;
+	color: #8F040B !important;
+}
+.second-slide p:nth-child(2) {
+	font-size: 45px !important;
+	letter-spacing: 10px;
+}
+.third-slide p:nth-child(1){
+	font-size: 45px !important;
+	letter-spacing: 3px;
+}
 
 .image-content p:nth-child(2), .image-content p:nth-child(3) {
 	font-size: 30px;
@@ -138,12 +167,12 @@ img.nav-logo {
 }
 
 .row {
-	margin: -13px 0 0 0 !important;
+	margin: -21px 0 0 0 !important;
 }
 
 .phone, .biz {
 	position: relative;
-	height: 380px;
+	min-height: auto;
 	text-align: left;
 	width: 50%;
 	margin: 40px auto;
@@ -234,11 +263,6 @@ img.nav-logo {
 	border-right: 2px solid #FFF;
 }
 
-.rtw101-nav {
-	width: 30%;
-	padding: 1%;
-}
-
 .content-default {
 	background: url(../assets/city.jpg) no-repeat center;
 		-webkit-background-size: cover;
@@ -278,8 +302,14 @@ img.nav-logo {
 
 
 	/* ///// CONTENT NAV ////// */
-.form-horizontal {
+.rtw101-nav {
+	width: 30%;
+	padding: 1%;
 	text-align: left;
+}
+
+.rtw101-nav h3 {
+	margin-top: 5px;
 }
 
 .world-by-airtreks {
@@ -417,7 +447,6 @@ img.nav-logo {
 }
 
 .footer-item:hover {
-	background-color: #888;
 	text-transform: uppercase;
 }
 
@@ -430,14 +459,57 @@ img.nav-logo {
 	position: absolute;
 }
 
-
+.social li {
+	text-align: left;
+	display: inline-block;
+	padding: 0px 20px 0px 20px;
+}
 
 /* //////////////// ARTICLES INDEX //////////////// */
 
 .articles-container {
 	width: 100%;
-	height: 375vh;
+  margin: auto;
 	background-color: rgba(0,0,0,0.7);
+}
+
+.articles-container body {
+	background-color: #fff;
+}
+
+.article-list {
+	width: 25%;
+	min-height: 100%;
+	padding: 20px;
+	float: left;
+	background-color: #fff;
+	overflow: scroll;
+}
+
+.headline {
+	cursor: pointer;
+	background-color: #fff;
+	border: 2px solid #555555;
+	padding: 5px;
+}
+
+.headline:hover {
+	background-color: #555555;
+	color: #fff;
+}
+.headline.current {
+	background-color: #555555;
+	color: #fff;
+}
+
+.article-tiles {
+	width: 75%;
+	height: 100%;
+	float: left;
+	background-color: #fff;
+	display: block;
+	position: relative;
+	margin: 0 auto;
 }
 
 .img-box img {
@@ -451,26 +523,36 @@ img.nav-logo {
 	border-radius: 3px;
 }
 
-/*masonry testing*/
+	/* ///// MASONRY, ISOTOPE /////// */
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.masonry {
+.masonry, .isotope {
   margin: 0 auto;
+  /*max-width: 1000px;*/
+}
+
+.masonry:after, .isotope:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .masonry .itemz {
+	position: relative;
   width: 300px;
   height: auto;
   float: left;
   padding: 10px;
   background-color: #8FC2E9;
   border: 2px solid #333;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   margin: 5px;
+  display: block;
+  z-index: 1;
 }
 
 .itemz:hover {
@@ -479,7 +561,6 @@ img.nav-logo {
   cursor: pointer;
 }
 
-/*////////////////*/
 .itemz {
   -webkit-transition: width 0.4s, height 0.4s;
      -moz-transition: width 0.4s, height 0.4s;
@@ -489,21 +570,15 @@ img.nav-logo {
 
 
 /* both itemz and itemz content change size */
-.itemz.is-expanded,
-.itemz.is-expanded .itemz-content {
-  width: 400px;
+.itemz.is-expanded {
+	position: relative;
+  width: 90%;
+  margin: 25px auto;
   height: auto;
-}
-
-.itemz.is-expanded {
   z-index: 2;
-}
-
-.itemz.is-expanded {
   background: #F90;
+  left: 10%;
 }
-
-
 
 
 

@@ -13,44 +13,9 @@ $(document).ready(function(){
 
 	});		
 
-
-////////////////
-
-	var navLink = function(link){
-		$(".view-options").removeClass("current");
-		$(".hiddenitems").slideUp();
-		$(".content-default").hide();
-		$(link).addClass("current");
-	}
-	
-	// $(".content-default").addClass("current"); // main splash for content section // no hooked up
-
-	$(".nav-title").click(function(){
-		navLink(this);
-		$(".content-default").show();
-	})
-
-	$(".ready-nav").click(function(){
-		navLink(this);
-		$(".ready-div").addClass("current").fadeIn(); /// changes the content area to ready
-		$(".ready-hiddenitems").slideDown("current");		
-		
-	});
-
-	$(".set-nav").click(function(event){
-		navLink(this)
-		$(".set-div").addClass("current"); // changes the content area to set
-		$(".set-hiddenitems").slideDown("current");		
-	});
-
-	$(".go-nav").click(function(event){
-		navLink(this)
-		$(".go-div").addClass("current"); /// changes the content area to go
-		$(".go-hiddenitems").slideDown("current");		
-	});
 	
 
-	// moving RTW 101 banner 
+	///// moving RTW 101 banner ////// 
 	$(document).scroll(function(){
 			var pageScroll = $(this).scrollTop();
 			var rtwBanner = $('#rtwBannerAnchor').offset().top - 500;
@@ -60,28 +25,10 @@ $(document).ready(function(){
 					bottom: "100px",
 				}, 'slow');
 			}
-
-
-// NAVBAR ENSMALLEN ON SCROLL
-	// 		if (pageScroll < 100 ) {
-	// 			$('.navbar').css('height','100px');
-	// 		} else {
-	// 			$('.navbar').css({
-	// 				'height':'50px',
-	// 				'position':'fixed',
-	// 			});
-	// 		}
 	});
 
 
-	// BOOTSTRAP ACCORDION ///
-	// $('.collapse').collapse()
-
-	$('#collapseOne').collapse("hide");  // hides them all on page load
-
-
-
-	// scrolling down to RTW content section //
+	//// scrolling down to RTW 101 from top carousel ////
 	$('#tortw').click(function(){
       $('html, body').animate({
         scrollTop: $("#toRTW101").offset().top - 10
@@ -89,15 +36,16 @@ $(document).ready(function(){
       return false;
   });
 
-	// for fade-in of first carousel text on page load
+
+	// for fade-in of first carousel text on page load //
 	$('.image-content').delay(500).fadeIn(400);
 
-	// BOOSTRAP CAROUSEL
+
+	// BOOSTRAP CAROUSEL //
 	$('.carousel').carousel()
 
 
-	/// MASONRY ///
-
+	/// ARTICLE EXPAND ///
  	$(function(){ 
 		var $container = document.querySelector('.masonry');
 

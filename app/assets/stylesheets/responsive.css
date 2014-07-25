@@ -1,0 +1,16 @@
+@media (min-width: 720px) and (max-width: 900px) {
+	
+	.image-content {
+		font-size: ;
+	}	
+
+
+	.rtw101-nav {
+		background-color: red !important;
+		
+	}
+}
+
+@media (max-width: 360px) {
+
+}

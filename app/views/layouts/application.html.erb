@@ -2,12 +2,13 @@
 <html>
 <head>
   <title>Airtreks Redesign</title>
-  	
+  <meta name="viewport" content="width=device-width" />
+  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
  	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Ewert|Open+Sans|Nobile|Signika|Titillium+Web|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ewert|Open+Sans|Nobile|Titillium+Web|Source+Sans+Pro|Homemade+Apple|The+Girl+Next+Door' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="assets/owl.carousel.css">
   <link rel="stylesheet" href="assets/owl.theme.css">	
@@ -16,10 +17,8 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <script src="assets/masonry.pkgd.min.js"></script>
 	<script src="assets/owl.carousel.js"></script>
  	<script src="assets/owl.caro.js"></script>
-
 
 </head>
 <body>
@@ -46,14 +45,14 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Travel Store <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
+	            <li><a href="#">Lodging &amp; Hotels</a></li>
+	            <li><a href="#">Travel Insurance</a></li>
+	            <li><a href="#">Tours &amp; Excursions</a></li>
+	            <li><a href="#">Gear &amp; Luggage</a></li>
+	            <li><a href="#">Guides, Books &amp; Maps</a></li>
 	            <li class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	            <li class="divider"></li>
-	            <li><a href="#">One more separated link</a></li>
-	          </ul>
+	            <li><a href="#">Travel Services</a></li>
+	           </ul>
 	        </li>
 	        
 	        <li><a href="#">Blog</a></li>
@@ -81,35 +80,34 @@
 		<div class="footer-row-container">
 			<div class="row">
 			  <div class="col-md-4">
-			  	<ul class="list-unstyled list-group">
-			  		<li class="text-left"><h5>THE DEETS</h5>
-			  		<li class="text-left footer-item"><a href="#">Contact AirTreks</a></li>
-			  		<li class="text-left footer-item"><a href="#">About AirTreks</a></li>
-			  		<li class="text-left footer-item"><a href="#">Your Privacy</a></li>
-			  		<li class="text-left footer-item"><a href="#">Partner with AirTreks</a></li>
-			  		<li class="text-left footer-item"><a href="#">FAQs</a></li>
-			  		<li class="text-left footer-item"><a href="#">Customer Service</a></li>
-			  		<li class="text-left footer-item"><a href="#">Sitemap</a></li>
+			  	<ul class="list-unstyled list-group text-left">
+			  		<li><h5>THE DEETS</h5>
+			  		<li class="footer-item"><a href="#">Contact AirTreks</a></li>
+			  		<li class="footer-item"><a href="#">About AirTreks</a></li>
+			  		<li class="footer-item"><a href="#">Your Privacy</a></li>
+			  		<li class="footer-item"><a href="#">Partner with AirTreks</a></li>
+			  		<li class="footer-item"><a href="#">FAQs</a></li>
+			  		<li class="footer-item"><a href="#">Customer Service</a></li>
+			  		<li class="footer-item"><a href="#">Sitemap</a></li>
 			  	</ul>
 			  </div>
 			  <div class="col-md-4">
-					<ul class="list-unstyled list-group">
+					<ul class="list-unstyled list-group text-left">
 			  		<li class="text-left"><h5>RTW 101</h5></li>
-			  		<li class="text-left footer-item"><a href="#">Ready</a></li>
-			  		<li class="text-left footer-item"><a href="#">Set</a></li>
-			  		<li class="text-left footer-item"><a href="#">Go</a></li>
 			  		<li class="text-left footer-item"><a href="#">Travel Store</a></li>
 			  		<li class="text-left footer-item"><a href="#">Blog</a></li>
 			  		<li class="text-left footer-item"><a href="#">Testimonials</a></li>
 			  	</ul>
 			  </div>
 			  <div class="col-md-4">
-			  	<ul class="list-unstyled list-group">
-			  		<li class="text-left"><h5>SOCIALIZE WITH US</h5></li>
-			  		<li class="text-left footer-item"><a href="#">Facebook</a></li>
-			  		<li class="text-left footer-item"><a href="#">Twitter</a></li>
+			  	<ul class="list-unstyled list-group text-left social">
+			  		<li><h5>SOCIALIZE WITH US</h5></li><br>
+			  		<li class="footer-item"><a href="http://www.facebook.com/airtreksrtw"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+			  		<li class="footer-item"><a href="http://www.twitter.com/airtreks"><i class="fa fa-twitter-square fa-2x"></i> </a></li>
+			  		<li class="footer-item"><a href="https://plus.google.com/u/0/103614896315177653372/posts"><i class="fa fa-google-plus-square fa-2x"></i> </a></li>
+			  		<li class="footer-item"><a href="http://www.pinterest.com/airtreks/"><i class="fa fa-pinterest-square fa-2x"></i> </a></li>
 			  	</ul>
-			  	<p class="text-left"><img class="footer-logo" src="assets/at_logo.png"></p>
+			  	<p style="font-size:17px" class="text-left">&copy; 2014 AirTreks, Inc</p>
 			  </div>
 			</div>
 		</div>
